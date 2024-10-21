@@ -10,4 +10,4 @@ Prefetch, LNK(JumpList), web log, evt_log, MFT & Usnjrnl을 디스크 이미지 
 
 ※ sleuthkit, analyzeMFT, USN-Journal-Parser, python-evtx를 목적에 맞게 포팅하여 사용하였습니다 ※
 
-setup.py를 이용하면 exe로 즐길 수 있습니다
+setup.py를 이용하면 exe로 즐길 수 있습니다 --> python setup.py build를 cmd에 입력
