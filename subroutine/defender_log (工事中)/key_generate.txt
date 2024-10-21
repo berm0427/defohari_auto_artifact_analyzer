@@ -1,0 +1,6 @@
+https://soojae.tistory.com/67
+
+참고하여 개인키를 만들어 놓을것(기존 첨부한 키 사용량 초과 대비)
+
+pip3 install --upgrade google-auth google-auth-oauthlib google-auth-httplib2 gspread
+실행 할 것
