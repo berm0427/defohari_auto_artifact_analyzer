@@ -1,0 +1,3 @@
+python evt.py D:\capstone\defohari\output\artifact\event_log\Application.evtx D:\capstone\defohari\output\artifact\event_log\System.evtx D:\capstone\defohari\output\artifact\event_log\Security.evtx
+
+개발환경에서 테스트용으로 사용했으며 현재는 사용하지 않아도 됨
