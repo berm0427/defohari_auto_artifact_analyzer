@@ -1,0 +1,1293 @@
+===== MFTJ 아티팩트 처리 (의심스러운 아티팩트 포함) 시작 =====
+===== 웹 아티팩트 처리 (의심스러운 아티팩트 포함) 시작 =====
+===== LNK 아티팩트 처리 (의심스러운 아티팩트 포함) 시작 =====
+===== 프리패치 아티팩트 처리 (의심스러운 아티팩트 포함) 시작 =====
+===== 이벤트 로그 아티팩트 처리 (의심스러운 아티팩트 포함) 시작 =====
+파티션 오프셋 찾음: 0000239616
+Windows의 inode 번호: 1613-144-5
+System32의 inode 번호: 3479-144-7
+winevt의 inode 번호: 4643-144-1
+Logs의 inode 번호: 4644-144-6
+..\..\output\artifact\event_log\Application.evtx에 106557-128-4를 가진 Application.evtx 파일 추출 성공
+..\..\output\artifact\event_log\Security.evtx에 106558-128-4를 가진 Security.evtx 파일 추출 성공
+..\..\output\artifact\event_log\System.evtx에 106555-128-4를 가진 System.evtx 파일 추출 성공
+Application 로그를 처리 중입니다...
+총 241개의 Application 이벤트 로그가 있습니다.
+
+System 로그를 처리 중입니다...
+총 334개의 System 이벤트 로그가 있습니다.
+
+Security 로그를 처리 중입니다...
+총 930개의 Security 이벤트 로그가 있습니다.
+
+파티션 오프셋 찾음: 0000239616
+외부 스크립트 실행 결과:
+Processing RID: 000001F4
+Found 'V' value for RID: 000001F4
+Found valid username at offset 494: Administrator
+Processing RID: 000001F5
+Found 'V' value for RID: 000001F5
+Found valid username at offset 448: Guest
+Processing RID: 000001F7
+Found 'V' value for RID: 000001F7
+Processing RID: 000001F8
+Found 'V' value for RID: 000001F8
+Processing RID: 000003E8
+Found 'V' value for RID: 000003E8
+Found valid username at offset 472: Default User
+Processing RID: 000003E9
+Found 'V' value for RID: 000003E9
+Found valid username at offset 448: ccno
+Skipping non-RID key: Names
+ccno:000003E9 2024-09-23 14:47:19
+Administrator:000001F4 Never logged in
+Guest:000001F5 Never logged in
+Default User:000003E8 2024-09-23 12:27:16
+<Unknown>:000001F7 Never logged in
+<Unknown>:000001F8 Never logged in
+
+..\..\output\artifact\LNK\ccno_lnk\forensic.lnk에 .lnk 파일 추출 성공
+..\..\output\artifact\LNK\ccno_lnk\anti.lnk에 .lnk 파일 추출 성공
+Administrator 디렉토리를 찾을 수 없습니다.
+Guest 디렉토리를 찾을 수 없습니다.
+Default User의 'AppData' 디렉토리를 찾을 수 없습니다.
+외부 스크립트 실행 결과:
+Processing RID: 000001F4
+Found 'V' value for RID: 000001F4
+Found valid username at offset 494: Administrator
+Processing RID: 000001F5
+Found 'V' value for RID: 000001F5
+Found valid username at offset 448: Guest
+Processing RID: 000001F7
+Found 'V' value for RID: 000001F7
+Processing RID: 000001F8
+Found 'V' value for RID: 000001F8
+Processing RID: 000003E8
+Found 'V' value for RID: 000003E8
+Found valid username at offset 472: Default User
+Processing RID: 000003E9
+Found 'V' value for RID: 000003E9
+Found valid username at offset 448: ccno
+Skipping non-RID key: Names
+Administrator:000001F4 Never logged in
+Default User:000003E8 2024-09-23 12:27:16
+<Unknown>:000001F7 Never logged in
+<Unknown>:000001F8 Never logged in
+ccno:000003E9 2024-09-23 14:47:19
+Guest:000001F5 Never logged in
+
+데이터가 ..\..\output\artifact\LNK\lnk_files_Administrator.csv와 ..\..\output\artifact\LNK\lnk_files_Administrator.xml 파일로 저장되었습니다.
+데이터가 ..\..\output\artifact\LNK\lnk_files_Default User.csv와 ..\..\output\artifact\LNK\lnk_files_Default User.xml 파일로 저장되었습니다.
+데이터가 ..\..\output\artifact\LNK\lnk_files_ccno.csv와 ..\..\output\artifact\LNK\lnk_files_ccno.xml 파일로 저장되었습니다.
+데이터가 ..\..\output\artifact\LNK\lnk_files_Guest.csv와 ..\..\output\artifact\LNK\lnk_files_Guest.xml 파일로 저장되었습니다.
+Job is working Please wait...
+File downloaded successfully as 'evt_logs.xlsx'.
+안티포렌식 이벤트 로그가 ..\..\output\suspicious_artifact\event_log\anti_forensic_events.csv에 저장되었습니다.
+파티션 오프셋 찾음: 0000239616
+Users의 inode 번호: 1556-144-5
+외부 스크립트 실행 결과:
+Processing RID: 000001F4
+Found 'V' value for RID: 000001F4
+Found valid username at offset 494: Administrator
+Processing RID: 000001F5
+Found 'V' value for RID: 000001F5
+Found valid username at offset 448: Guest
+Processing RID: 000001F7
+Found 'V' value for RID: 000001F7
+Processing RID: 000001F8
+Found 'V' value for RID: 000001F8
+Processing RID: 000003E8
+Found 'V' value for RID: 000003E8
+Found valid username at offset 472: Default User
+Processing RID: 000003E9
+Found 'V' value for RID: 000003E9
+Found valid username at offset 448: ccno
+Skipping non-RID key: Names
+Administrator:000001F4 Never logged in
+Guest:000001F5 Never logged in
+Default User:000003E8 2024-09-23 12:27:16
+<Unknown>:000001F7 Never logged in
+ccno:000003E9 2024-09-23 14:47:19
+<Unknown>:000001F8 Never logged in
+
+사용자 이름: Administrator
+사용자 Administrator의 홈 디렉토리를 찾을 수 없습니다.
+사용자 이름: Guest
+사용자 Guest의 홈 디렉토리를 찾을 수 없습니다.
+사용자 이름: Default User
+MFT processing complete. Total records processed: 161536
+Writing output in csv format to ..\..\output\artifact\MFTJ\mft_output.csv
+===== LNK 아티팩트 시간 정보 추출 시작 =====
+디스크 이미지 파일 찾음: G:\capstone\defohari\image_here\file_extract.E01
+파티션 오프셋 찾음: 0000239616
+Job is working Please wait...
+File downloaded successfully as 'antiforensic_logs.xlsx'.
+
+MFT Analysis Statistics:
+Total records processed: 161536
+Active records: 114287
+Directories: 32505
+Default User의 inode 번호: 106214-144-1
+Edge 브라우저의 'AppData' 디렉토리를 찾을 수 없습니다.
+Chrome 브라우저의 'AppData' 디렉토리를 찾을 수 없습니다.
+Whale 브라우저의 'AppData' 디렉토리를 찾을 수 없습니다.
+App_path: G:\capstone\defohari\output\artifact\event_log\Application.evtx
+Users의 inode 번호: 1556-144-5
+찾은 사용자 디렉토리: All Users, inode: 106215-144-1
+Firefox 브라우저의 'AppData' 디렉토리를 찾을 수 없습니다.
+사용자 이름: ccno
+ccno의 inode 번호: 55846-144-5
+찾은 사용자 디렉토리: ccno, inode: 55846-144-5
+Secu_path: G:\capstone\defohari\output\artifact\event_log\Security.evtx
+Sys_path: G:\capstone\defohari\output\artifact\event_log\System.evtx
+AppData의 inode 번호: 55861-144-1
+Local의 inode 번호: 55887-144-5
+Files: 129031
+Analysis complete. Results written to ..\..\output\artifact\MFTJ\mft_output.csv
+찾은 사용자 디렉토리: Default, inode: 1557-144-5
+Microsoft의 inode 번호: 55890-144-6
+===== 이벤트 로그 아티팩트 처리 (의심스러운 아티팩트 포함) 종료 =====
+
+찾은 사용자 디렉토리: Default User, inode: 106214-144-1
+찾은 사용자 디렉토리: defaultuser0, inode: 108486-144-6
+Edge의 inode 번호: 110825-144-1
+User Data의 inode 번호: 110827-144-6
+찾은 사용자 디렉토리: Public, inode: 1605-144-5
+All Users 사용자에 대한 'Recent' 디렉토리 검색 시작
+All Users 사용자의 'Recent' 디렉토리를 찾을 수 없습니다.
+ccno 사용자에 대한 'Recent' 디렉토리 검색 시작
+AppData의 inode 번호: 55861-144-1
+Roaming의 inode 번호: 55862-144-1
+Microsoft의 inode 번호: 55865-144-6
+Windows의 inode 번호: 55866-144-5
+Recent의 inode 번호: 55879-144-5
+Default의 inode 번호: 111709-144-6
+History의 inode 번호: 111720-128-3
+History의 inode 번호: 111721-128-4
+찾은 파일: CustomDestinations, inode: 110574-144-6
+파일 추출 완료: ..\..\output\artifact\web\History_Edge_ccno
+찾은 파일: 7e4dca80246863e3.customDestinations-ms, inode: 110575-128-1
+찾은 파일: ccba5a5986c77e43.customDestinations-ms, inode: 112407-128-4
+AppData의 inode 번호: 55861-144-1
+찾은 파일: f01b4d95cf55d32a.customDestinations-ms, inode: 111693-128-1
+Local의 inode 번호: 55887-144-5
+찾은 파일: desktop.ini, inode: 110797-128-1
+Chrome 브라우저의 'Google' 디렉토리를 찾을 수 없습니다.
+AppData의 inode 번호: 55861-144-1
+Local의 inode 번호: 55887-144-5
+Whale 브라우저의 'Naver' 디렉토리를 찾을 수 없습니다.
+찾은 파일: AutomaticDestinations, inode: 111691-144-6
+찾은 파일: 5f7b5f1e01b83767.automaticDestinations-ms, inode: 111091-128-4
+찾은 파일: f01b4d95cf55d32a.automaticDestinations-ms, inode: 111692-128-4
+찾은 파일: 9b9cdc69c1c24e2b.automaticDestinations-ms, inode: 112580-128-4
+AppData의 inode 번호: 55861-144-1
+찾은 파일: forensic.lnk, inode: 112590-128-1
+Roaming의 inode 번호: 55862-144-1
+찾은 파일: anti.lnk, inode: 112591-128-1
+Firefox 브라우저의 'Mozilla' 디렉토리를 찾을 수 없습니다.
+찾은 파일: anti.lnk, inode: 113860-128-1
+Users의 inode 번호: 1556-144-5
+외부 스크립트 실행 결과:
+Processing RID: 000001F4
+Found 'V' value for RID: 000001F4
+forensic.lnk의 시간 정보 추출 완료
+anti.lnk의 시간 정보 추출 완료
+anti.lnk의 시간 정보 추출 완료
+Found valid username at offset 494: Administrator
+Processing RID: 000001F5
+Found 'V' value for RID: 000001F5
+Found valid username at offset 448: Guest
+Processing RID: 000001F7
+Found 'V' value for RID: 000001F7
+Processing RID: 000001F8
+Found 'V' value for RID: 000001F8
+Processing RID: 000003E8
+Found 'V' value for RID: 000003E8
+Found valid username at offset 472: Default User
+CSV 파일 작성 완료: G:\capstone\defohari\output\artifact\LNK\lnk_files_time_ccno.csv
+XML 파일 작성 완료: G:\capstone\defohari\output\artifact\LNK\lnk_files_time_ccno.xml
+Default 사용자에 대한 'Recent' 디렉토리 검색 시작
+Processing RID: 000003E9
+Found 'V' value for RID: 000003E9
+Found valid username at offset 448: ccno
+Skipping non-RID key: Names
+ccno:000003E9 2024-09-23 14:47:19
+<Unknown>:000001F8 Never logged in
+<Unknown>:000001F7 Never logged in
+Guest:000001F5 Never logged in
+Default User:000003E8 2024-09-23 12:27:16
+Administrator:000001F4 Never logged in
+
+사용자 이름: ccno
+ccno의 inode 번호: 55846-144-5
+AppData의 inode 번호: 1558-144-1
+AppData의 inode 번호: 55861-144-1
+Roaming의 inode 번호: 1578-144-1
+Microsoft의 inode 번호: 1579-144-1
+Windows의 inode 번호: 1582-144-5
+Recent의 inode 번호: 1586-144-1
+Default 사용자의 'Recent' 디렉토리에 파일이 존재하지 않습니다.
+Default User 사용자에 대한 'Recent' 디렉토리 검색 시작
+Default User 사용자의 'Recent' 디렉토리를 찾을 수 없습니다.
+defaultuser0 사용자에 대한 'Recent' 디렉토리 검색 시작
+Roaming의 inode 번호: 55862-144-1
+ccno의 'utorrent' 디렉토리를 찾을 수 없습니다.
+AppData의 inode 번호: 108499-144-1
+Roaming의 inode 번호: 108500-144-1
+Microsoft의 inode 번호: 108501-144-6
+사용자 이름: Guest
+사용자 Guest의 홈 디렉토리를 찾을 수 없습니다.
+사용자 이름: Default User
+Windows의 inode 번호: 108502-144-5
+Recent의 inode 번호: 108512-144-1
+찾은 파일: AutomaticDestinations, inode: 108816-144-6
+찾은 파일: 5f7b5f1e01b83767.automaticDestinations-ms, inode: 108882-128-4
+찾은 파일: f01b4d95cf55d32a.automaticDestinations-ms, inode: 108870-128-4
+defaultuser0 사용자의 'Recent' 디렉토리에 .lnk 파일이 존재하지 않습니다.
+Public 사용자에 대한 'Recent' 디렉토리 검색 시작
+Public 사용자의 'Recent' 디렉토리를 찾을 수 없습니다.
+===== LNK 아티팩트 시간 정보 추출 종료 =====
+Default User의 inode 번호: 106214-144-1
+Default User의 'AppData' 디렉토리를 찾을 수 없습니다.
+사용자 이름: Administrator
+사용자 Administrator의 홈 디렉토리를 찾을 수 없습니다.
+===== G:\capstone\defohari\output\artifact\LNK 내 파일 병합 및 덮어쓰기 시작 =====
+XML output saved to ..\..\output\artifact\web\web_output.xml
+파일 병합 시작: ccno
+CSV 파일 저장 완료: G:\capstone\defohari\output\artifact\LNK\lnk_files_ccno.csv
+파일을 찾을 수 없습니다: [Errno 2] No such file or directory: '..\\..\\output\\artifact\\web\\torrent_output.xml'
+파티션 오프셋 찾음: 0000239616
+Running command: python web_find_user.py
+사용자 목록: ['Default User', 'ccno', 'Guest', 'Administrator']
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01
+XML 파일 저장 완료: G:\capstone\defohari\output\artifact\LNK\lnk_files_ccno.xml
+===== 파일 병합 및 덮어쓰기 완료 =====
+Users의 inode 번호: 1556
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01 1556
+Default User의 inode 번호: 106214
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01 106214
+사용자 Default User의 Downloads 디렉토리를 찾지 못했습니다.
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01
+Users의 inode 번호: 1556
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01 1556
+ccno의 inode 번호: 55846
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01 55846
+Downloads의 inode 번호: 55858
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01 55858
+의심스러운 파일 발견: 113507-128-4:	Eraser 6.2.0.2994.exe
+ccno의 의심스러운 파일: 1개 발견
+Running command: icat -f ntfs -o 239616 ..\..\image_here\file_extract.E01 113507
+추출한 데이터 크기: 8843096 바이트
+파일 추출 완료: ..\..\output\suspicious_file\web\ccno\Eraser 6.2.0.2994.exe
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01
+Users의 inode 번호: 1556
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01 1556
+사용자 Guest 디렉토리를 찾지 못했습니다.
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01
+Users의 inode 번호: 1556
+Running command: fls -f ntfs -o 239616 ..\..\image_here\file_extract.E01 1556
+사용자 Administrator 디렉토리를 찾지 못했습니다.
+===== 웹 아티팩트 처리 (의심스러운 아티팩트 포함) 종료 =====
+
+파티션 오프셋 찾음: 0000239616
+Windows의 inode 번호: 1613-144-5
+Prefetch의 inode 번호: 100269-144-6
+fls 명령어 결과:
+r/r 112791-128-4:	AUDIODG.EXE-AB22E9A6.pf
+r/r 112136-128-4:	BACKGROUNDTASKHOST.EXE-3021E375.pf
+r/r 112093-128-4:	BACKGROUNDTASKHOST.EXE-489B7DDD.pf
+r/r 109596-128-4:	BACKGROUNDTASKHOST.EXE-6EA81700.pf
+r/r 112491-128-4:	BACKGROUNDTASKHOST.EXE-772AFF02.pf
+r/r 112139-128-4:	BACKGROUNDTASKHOST.EXE-E20C03EA.pf
+r/r 111319-128-4:	BACKGROUNDTASKHOST.EXE-F8B2DD01.pf
+r/r 113938-128-4:	BACKGROUNDTRANSFERHOST.EXE-052CB2AA.pf
+r/r 109648-128-4:	CLOUDEXPERIENCEHOSTBROKER.EXE-AB26EBC7.pf
+r/r 55831-128-4:	CONHOST.EXE-0C6456FB.pf
+r/r 110903-128-4:	CONSENT.EXE-40419367.pf
+r/r 110775-128-4:	CSRSS.EXE-F3C368CB.pf
+r/r 60103-128-4:	PfPre_e4d9908a.mkd
+d/d 106235-144-1:	ReadyBoot
+r/r 47957-128-4:	ResPriHMStaticDb.ebd
+r/r 108443-128-4:	ResPriStaticDb.ebd
+r/r 110734-128-4:	RUNDLL32.EXE-5F579E97.pf
+r/r 112561-128-4:	RUNDLL32.EXE-FDCBB5A1.pf
+r/r 113349-128-4:	RUNTIMEBROKER.EXE-38943DD5.pf
+r/r 109775-128-4:	SPPSVC.EXE-96070FE0.pf
+r/r 111295-128-4:	STARTMENUEXPERIENCEHOST.EXE-DC9B8E9D.pf
+r/r 1341-128-4:	TRUSTEDINSTALLER.EXE-766EFF52.pf
+r/r 110725-128-4:	UNREGMP2.EXE-51519EBD.pf
+r/r 110327-128-4:	USEROOBEBROKER.EXE-65584ADF.pf
+r/r 112412-128-4:	VERCLSID.EXE-AB0FD091.pf
+r/r 47894-128-4:	VSSVC.EXE-6C8F0C66.pf
+r/r 110397-128-4:	WERMGR.EXE-F439C551.pf
+r/r 110776-128-4:	WINLOGON.EXE-DEDDC9B6.pf
+r/r 109594-128-4:	WLRMDR.EXE-A7C36FDD.pf
+r/r 47746-128-4:	WMIADAP.EXE-BB21CD77.pf
+r/r 109584-128-4:	WMIPRVSE.EXE-E8B8DD29.pf
+r/r 110388-128-4:	WUAUCLT.EXE-5D573F0E.pf
+r/r 109338-128-4:	WWAHOST.EXE-9174341B.pf
+r/r 109969-128-4:	DRVINST.EXE-39D9EAC7.pf
+r/r 47914-128-4:	DSMUSERTASK.EXE-853A6893.pf
+r/r 113663-128-4:	ERASER 6.2.0.2994.EXE-0872870C.pf
+r/r 112103-128-4:	FILESYNCCONFIG.EXE-69058E29.pf
+r/r 113774-128-4:	FILESYNCCONFIG.EXE-D11AE5E6.pf
+r/r 110178-128-4:	FODHELPER.EXE-7F1ED892.pf
+r/r 111706-128-4:	FSQUIRT.EXE-A8FF1DEB.pf
+r/r 112323-128-4:	IDENTITY_HELPER.EXE-B24E81E7.pf
+r/r 59977-128-4:	LOGONUI.EXE-F639BD7E.pf
+r/r 47845-128-4:	LPREMOVE.EXE-570BDFF7.pf
+r/r 112140-128-4:	MICROSOFT.PHOTOS.EXE-05E31754.pf
+r/r 109714-128-4:	MICROSOFTEDGEUPDATE.EXE-7A595326.pf
+r/r 110641-128-4:	MICROSOFTEDGEUPDATE.EXE-ED82F101.pf
+r/r 110248-128-4:	MICROSOFTEDGEUPDATESETUP_X86_-29BFE7FB.pf
+r/r 109788-128-4:	MICROSOFTEDGE_X64_129.0.2792.-44F52B78.pf
+r/r 109057-128-4:	PfPre_e4d8caad.mkd
+r/r 109639-128-4:	RUNTIMEBROKER.EXE-42D4E2C5.pf
+r/r 109688-128-4:	SPPEXTCOMOBJ.EXE-7D45A1AB.pf
+r/r 47767-128-4:	SVCHOST.EXE-5D15888E.pf
+r/r 110724-128-4:	SVCHOST.EXE-DB425447.pf
+r/r 41236-128-4:	TIWORKER.EXE-541F28C3.pf
+r/r 47895-128-4:	SVCHOST.EXE-6A249820.pf
+r/r 110480-128-4:	SVCHOST.EXE-6E1A6101.pf
+r/r 47973-128-4:	SVCHOST.EXE-6E285CB9.pf
+r/r 57151-128-4:	SVCHOST.EXE-74450C2F.pf
+r/r 109754-128-4:	SVCHOST.EXE-7C364D53.pf
+r/r 55825-128-4:	SVCHOST.EXE-8C0617FB.pf
+r/r 47975-128-4:	SVCHOST.EXE-8C737072.pf
+r/r 110573-128-4:	SVCHOST.EXE-9E5372D6.pf
+r/r 55851-128-4:	SVCHOST.EXE-9F82877C.pf
+r/r 108811-128-4:	SVCHOST.EXE-A87523EE.pf
+r/r 112067-128-4:	SVCHOST.EXE-B1C43117.pf
+r/r 109611-128-4:	SVCHOST.EXE-BF3D5CA5.pf
+r/r 113272-128-4:	SVCHOST.EXE-D0F686CF.pf
+r/r 47686-128-4:	SVCHOST.EXE-D1834105.pf
+r/r 110331-128-4:	SVCHOST.EXE-D23C24EB.pf
+r/r 110168-128-4:	SVCHOST.EXE-DAF72364.pf
+r/r 47877-128-4:	SVCHOST.EXE-DB06B1F5.pf
+r/r 47692-128-4:	MOUSOCOREWORKER.EXE-4429AC2B.pf
+r/r 47953-128-4:	MPCMDRUN.EXE-2C9109F9.pf
+r/r 110341-128-4:	MSCORSVW.EXE-16B291C4.pf
+r/r 1776-128-4:	MSCORSVW.EXE-8CE1A322.pf
+r/r 111976-128-4:	MSEDGE.EXE-37D25F9A.pf
+r/r 112192-128-4:	MSEDGE.EXE-37D25F9B.pf
+r/r 112101-128-4:	MSEDGE.EXE-37D25F9C.pf
+r/r 111815-128-4:	MSEDGE.EXE-37D25F9E.pf
+r/r 112090-128-4:	MSEDGE.EXE-37D25FA2.pf
+r/r 112706-128-4:	SECURITYHEALTHHOST.EXE-06344EE9.pf
+r/r 112059-128-4:	SETTINGSYNCHOST.EXE-0130E42A.pf
+r/r 1316-128-4:	SETUP.EXE-1047CF41.pf
+r/r 1317-128-4:	SETUP.EXE-1047CF45.pf
+r/r 109774-128-4:	SETUP.EXE-4A331366.pf
+r/r 109789-128-4:	SETUP.EXE-4A33136A.pf
+r/r 47684-128-4:	SGRMBROKER.EXE-32481FEB.pf
+r/r 112786-128-4:	SHELLEXPERIENCEHOST.EXE-655318BF.pf
+r/r 47956-128-4:	SIHCLIENT.EXE-98C47F6C.pf
+r/r 109671-128-4:	SLUI.EXE-3E441AEE.pf
+r/r 47948-128-4:	SMARTSCREEN.EXE-EACC1250.pf
+r/r 59978-128-4:	SMSS.EXE-B5B810DB.pf
+r/r 112104-128-4:	SVCHOST.EXE-04F53BBC.pf
+r/r 111164-128-4:	SVCHOST.EXE-0EC77F95.pf
+r/r 47974-128-4:	SVCHOST.EXE-12871F9D.pf
+r/r 47687-128-4:	SVCHOST.EXE-15A68A42.pf
+r/r 151114-128-4:	SVCHOST.EXE-1C33C471.pf
+r/r 109785-128-4:	SVCHOST.EXE-38C6A0A6.pf
+r/r 110942-128-4:	SVCHOST.EXE-47D06EA1.pf
+r/r 47954-128-4:	SVCHOST.EXE-47E93A69.pf
+r/r 55826-128-4:	SVCHOST.EXE-47F05ECE.pf
+r/r 112416-128-4:	SVCHOST.EXE-4AFEF8D1.pf
+r/r 110177-128-4:	SVCHOST.EXE-4E8E9E20.pf
+r/r 106526-128-4:	SVCHOST.EXE-F0617438.pf
+r/r 111173-128-4:	SVCHOST.EXE-F630A562.pf
+r/r 111195-128-4:	SVCHOST.EXE-F8604993.pf
+r/r 47688-128-4:	SVCHOST.EXE-FDC3FC8E.pf
+r/r 112126-128-4:	SVCHOST.EXE-FF256082.pf
+r/r 110358-128-4:	TASKHOSTW.EXE-2E5D4B75.pf
+r/r 48005-128-4:	TEXTINPUTHOST.EXE-054E44A9.pf
+r/r 109605-128-4:	DLLHOST.EXE-15CDDA9C.pf
+r/r 47896-128-4:	DLLHOST.EXE-3D723117.pf
+r/r 109709-128-4:	DLLHOST.EXE-4427C062.pf
+r/r 109640-128-4:	DLLHOST.EXE-4B6CB38A.pf
+r/r 109583-128-4:	DLLHOST.EXE-4F1B3E7E.pf
+r/r 110326-128-4:	DLLHOST.EXE-6389524F.pf
+r/r 109563-128-4:	DLLHOST.EXE-960426D8.pf
+r/r 111190-128-4:	DLLHOST.EXE-ACFEFA21.pf
+r/r 109641-128-4:	DLLHOST.EXE-C60C3853.pf
+r/r 109642-128-4:	DLLHOST.EXE-E9BDD97B.pf
+r/r 113670-128-4:	MSIEXEC.EXE-8FFB1633.pf
+r/r 113668-128-4:	MSIEXEC.EXE-CDBFC0F7.pf
+r/r 110362-128-4:	NGEN.EXE-4A8DA13E.pf
+r/r 110361-128-4:	NGEN.EXE-734C6620.pf
+r/r 110359-128-4:	NGENTASK.EXE-0E6CEC17.pf
+r/r 110360-128-4:	NGENTASK.EXE-849BFD75.pf
+r/r 123325-128-4:	NISSRV.EXE-09946424.pf
+r/r 113914-128-4:	ONEDRIVE.EXE-B7BCF771.pf
+r/r 113655-128-4:	ONEDRIVESETUP.EXE-22F8D859.pf
+r/r 112069-128-4:	ONEDRIVESETUP.EXE-808CE70A.pf
+r/r 111390-128-4:	Op-SEARCHAPP.EXE-DD93808B-00000001.pf
+r/r 112476-128-4:	RUNTIMEBROKER.EXE-4551A062.pf
+r/r 47825-128-4:	RUNTIMEBROKER.EXE-5A3B22F7.pf
+r/r 111308-128-4:	RUNTIMEBROKER.EXE-68C55521.pf
+r/r 112790-128-4:	RUNTIMEBROKER.EXE-6B016F92.pf
+r/r 113910-128-4:	RUNTIMEBROKER.EXE-8EC73A74.pf
+r/r 111359-128-4:	RUNTIMEBROKER.EXE-929314A6.pf
+r/r 47757-128-4:	RUNTIMEBROKER.EXE-D0305CF6.pf
+r/r 113918-128-4:	RUNTIMEBROKER.EXE-D8B344F8.pf
+r/r 111369-128-4:	SEARCHAPP.EXE-D91D826A.pf
+r/r 47829-128-4:	SEARCHFILTERHOST.EXE-44162447.pf
+r/r 47828-128-4:	SEARCHPROTOCOLHOST.EXE-69C456C3.pf
+-/r 112574-128-4:	SVCHOST.EXE-C9E3B372.pf
+-/r 112584-128-4:	BACKGROUNDTASKHOST.EXE-073D0F2B.pf
+-/r 112586-128-4:	SVCHOST.EXE-9BA3717F.pf
+-/r 112605-128-4:	NOTEPAD.EXE-C5670914.pf
+
+파일: AUDIODG.EXE-AB22E9A6.pf
+파일: BACKGROUNDTASKHOST.EXE-3021E375.pf
+파일: BACKGROUNDTASKHOST.EXE-489B7DDD.pf
+파일: BACKGROUNDTASKHOST.EXE-6EA81700.pf
+파일: BACKGROUNDTASKHOST.EXE-772AFF02.pf
+파일: BACKGROUNDTASKHOST.EXE-E20C03EA.pf
+파일: BACKGROUNDTASKHOST.EXE-F8B2DD01.pf
+파일: BACKGROUNDTRANSFERHOST.EXE-052CB2AA.pf
+파일: CLOUDEXPERIENCEHOSTBROKER.EXE-AB26EBC7.pf
+파일: CONHOST.EXE-0C6456FB.pf
+파일: CONSENT.EXE-40419367.pf
+파일: CSRSS.EXE-F3C368CB.pf
+파일: RUNDLL32.EXE-5F579E97.pf
+파일: RUNDLL32.EXE-FDCBB5A1.pf
+파일: RUNTIMEBROKER.EXE-38943DD5.pf
+파일: SPPSVC.EXE-96070FE0.pf
+파일: STARTMENUEXPERIENCEHOST.EXE-DC9B8E9D.pf
+파일: TRUSTEDINSTALLER.EXE-766EFF52.pf
+파일: UNREGMP2.EXE-51519EBD.pf
+파일: USEROOBEBROKER.EXE-65584ADF.pf
+파일: VERCLSID.EXE-AB0FD091.pf
+파일: VSSVC.EXE-6C8F0C66.pf
+파일: WERMGR.EXE-F439C551.pf
+파일: WINLOGON.EXE-DEDDC9B6.pf
+파일: WLRMDR.EXE-A7C36FDD.pf
+파일: WMIADAP.EXE-BB21CD77.pf
+파일: WMIPRVSE.EXE-E8B8DD29.pf
+파일: WUAUCLT.EXE-5D573F0E.pf
+파일: WWAHOST.EXE-9174341B.pf
+파일: DRVINST.EXE-39D9EAC7.pf
+파일: DSMUSERTASK.EXE-853A6893.pf
+파일: ERASER 6.2.0.2994.EXE-0872870C.pf
+파일: FILESYNCCONFIG.EXE-69058E29.pf
+파일: FILESYNCCONFIG.EXE-D11AE5E6.pf
+파일: FODHELPER.EXE-7F1ED892.pf
+파일: FSQUIRT.EXE-A8FF1DEB.pf
+파일: IDENTITY_HELPER.EXE-B24E81E7.pf
+파일: LOGONUI.EXE-F639BD7E.pf
+파일: LPREMOVE.EXE-570BDFF7.pf
+파일: MICROSOFT.PHOTOS.EXE-05E31754.pf
+파일: MICROSOFTEDGEUPDATE.EXE-7A595326.pf
+파일: MICROSOFTEDGEUPDATE.EXE-ED82F101.pf
+파일: MICROSOFTEDGEUPDATESETUP_X86_-29BFE7FB.pf
+파일: MICROSOFTEDGE_X64_129.0.2792.-44F52B78.pf
+파일: RUNTIMEBROKER.EXE-42D4E2C5.pf
+파일: SPPEXTCOMOBJ.EXE-7D45A1AB.pf
+파일: SVCHOST.EXE-5D15888E.pf
+파일: SVCHOST.EXE-DB425447.pf
+파일: TIWORKER.EXE-541F28C3.pf
+파일: SVCHOST.EXE-6A249820.pf
+파일: SVCHOST.EXE-6E1A6101.pf
+파일: SVCHOST.EXE-6E285CB9.pf
+파일: SVCHOST.EXE-74450C2F.pf
+파일: SVCHOST.EXE-7C364D53.pf
+파일: SVCHOST.EXE-8C0617FB.pf
+파일: SVCHOST.EXE-8C737072.pf
+파일: SVCHOST.EXE-9E5372D6.pf
+파일: SVCHOST.EXE-9F82877C.pf
+파일: SVCHOST.EXE-A87523EE.pf
+파일: SVCHOST.EXE-B1C43117.pf
+파일: SVCHOST.EXE-BF3D5CA5.pf
+파일: SVCHOST.EXE-D0F686CF.pf
+파일: SVCHOST.EXE-D1834105.pf
+파일: SVCHOST.EXE-D23C24EB.pf
+파일: SVCHOST.EXE-DAF72364.pf
+파일: SVCHOST.EXE-DB06B1F5.pf
+파일: MOUSOCOREWORKER.EXE-4429AC2B.pf
+파일: MPCMDRUN.EXE-2C9109F9.pf
+파일: MSCORSVW.EXE-16B291C4.pf
+파일: MSCORSVW.EXE-8CE1A322.pf
+파일: MSEDGE.EXE-37D25F9A.pf
+파일: MSEDGE.EXE-37D25F9B.pf
+파일: MSEDGE.EXE-37D25F9C.pf
+파일: MSEDGE.EXE-37D25F9E.pf
+파일: MSEDGE.EXE-37D25FA2.pf
+파일: SECURITYHEALTHHOST.EXE-06344EE9.pf
+파일: SETTINGSYNCHOST.EXE-0130E42A.pf
+파일: SETUP.EXE-1047CF41.pf
+파일: SETUP.EXE-1047CF45.pf
+파일: SETUP.EXE-4A331366.pf
+파일: SETUP.EXE-4A33136A.pf
+파일: SGRMBROKER.EXE-32481FEB.pf
+파일: SHELLEXPERIENCEHOST.EXE-655318BF.pf
+파일: SIHCLIENT.EXE-98C47F6C.pf
+파일: SLUI.EXE-3E441AEE.pf
+파일: SMARTSCREEN.EXE-EACC1250.pf
+파일: SMSS.EXE-B5B810DB.pf
+파일: SVCHOST.EXE-04F53BBC.pf
+파일: SVCHOST.EXE-0EC77F95.pf
+파일: SVCHOST.EXE-12871F9D.pf
+파일: SVCHOST.EXE-15A68A42.pf
+파일: SVCHOST.EXE-1C33C471.pf
+파일: SVCHOST.EXE-38C6A0A6.pf
+파일: SVCHOST.EXE-47D06EA1.pf
+파일: SVCHOST.EXE-47E93A69.pf
+파일: SVCHOST.EXE-47F05ECE.pf
+파일: SVCHOST.EXE-4AFEF8D1.pf
+파일: SVCHOST.EXE-4E8E9E20.pf
+파일: SVCHOST.EXE-F0617438.pf
+파일: SVCHOST.EXE-F630A562.pf
+파일: SVCHOST.EXE-F8604993.pf
+파일: SVCHOST.EXE-FDC3FC8E.pf
+파일: SVCHOST.EXE-FF256082.pf
+파일: TASKHOSTW.EXE-2E5D4B75.pf
+파일: TEXTINPUTHOST.EXE-054E44A9.pf
+파일: DLLHOST.EXE-15CDDA9C.pf
+파일: DLLHOST.EXE-3D723117.pf
+파일: DLLHOST.EXE-4427C062.pf
+파일: DLLHOST.EXE-4B6CB38A.pf
+파일: DLLHOST.EXE-4F1B3E7E.pf
+파일: DLLHOST.EXE-6389524F.pf
+파일: DLLHOST.EXE-960426D8.pf
+파일: DLLHOST.EXE-ACFEFA21.pf
+파일: DLLHOST.EXE-C60C3853.pf
+파일: DLLHOST.EXE-E9BDD97B.pf
+파일: MSIEXEC.EXE-8FFB1633.pf
+파일: MSIEXEC.EXE-CDBFC0F7.pf
+파일: NGEN.EXE-4A8DA13E.pf
+파일: NGEN.EXE-734C6620.pf
+파일: NGENTASK.EXE-0E6CEC17.pf
+파일: NGENTASK.EXE-849BFD75.pf
+파일: NISSRV.EXE-09946424.pf
+파일: ONEDRIVE.EXE-B7BCF771.pf
+파일: ONEDRIVESETUP.EXE-22F8D859.pf
+파일: ONEDRIVESETUP.EXE-808CE70A.pf
+파일: Op-SEARCHAPP.EXE-DD93808B-00000001.pf
+파일: RUNTIMEBROKER.EXE-4551A062.pf
+파일: RUNTIMEBROKER.EXE-5A3B22F7.pf
+파일: RUNTIMEBROKER.EXE-68C55521.pf
+파일: RUNTIMEBROKER.EXE-6B016F92.pf
+파일: RUNTIMEBROKER.EXE-8EC73A74.pf
+파일: RUNTIMEBROKER.EXE-929314A6.pf
+파일: RUNTIMEBROKER.EXE-D0305CF6.pf
+파일: RUNTIMEBROKER.EXE-D8B344F8.pf
+파일: SEARCHAPP.EXE-D91D826A.pf
+파일: SEARCHFILTERHOST.EXE-44162447.pf
+파일: SEARCHPROTOCOLHOST.EXE-69C456C3.pf
+파일: SVCHOST.EXE-C9E3B372.pf
+파일: BACKGROUNDTASKHOST.EXE-073D0F2B.pf
+파일: SVCHOST.EXE-9BA3717F.pf
+파일: NOTEPAD.EXE-C5670914.pf
+파일 추출 완료: AUDIODG.EXE-AB22E9A6.pf
+파일 추출 완료: BACKGROUNDTASKHOST.EXE-3021E375.pf
+파일 추출 완료: BACKGROUNDTASKHOST.EXE-489B7DDD.pf
+파일 추출 완료: BACKGROUNDTASKHOST.EXE-6EA81700.pf
+파일 추출 완료: BACKGROUNDTASKHOST.EXE-772AFF02.pf
+파일 추출 완료: BACKGROUNDTASKHOST.EXE-E20C03EA.pf
+파일 추출 완료: BACKGROUNDTASKHOST.EXE-F8B2DD01.pf
+파일 추출 완료: BACKGROUNDTRANSFERHOST.EXE-052CB2AA.pf
+파일 추출 완료: CLOUDEXPERIENCEHOSTBROKER.EXE-AB26EBC7.pf
+파일 추출 완료: CONHOST.EXE-0C6456FB.pf
+파일 추출 완료: CONSENT.EXE-40419367.pf
+파일 추출 완료: CSRSS.EXE-F3C368CB.pf
+파일 추출 완료: RUNDLL32.EXE-5F579E97.pf
+파일 추출 완료: RUNDLL32.EXE-FDCBB5A1.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-38943DD5.pf
+파일 추출 완료: SPPSVC.EXE-96070FE0.pf
+파일 추출 완료: STARTMENUEXPERIENCEHOST.EXE-DC9B8E9D.pf
+파일 추출 완료: TRUSTEDINSTALLER.EXE-766EFF52.pf
+파일 추출 완료: UNREGMP2.EXE-51519EBD.pf
+파일 추출 완료: USEROOBEBROKER.EXE-65584ADF.pf
+파일 추출 완료: VERCLSID.EXE-AB0FD091.pf
+파일 추출 완료: VSSVC.EXE-6C8F0C66.pf
+파일 추출 완료: WERMGR.EXE-F439C551.pf
+파일 추출 완료: WINLOGON.EXE-DEDDC9B6.pf
+파일 추출 완료: WLRMDR.EXE-A7C36FDD.pf
+파일 추출 완료: WMIADAP.EXE-BB21CD77.pf
+파일 추출 완료: WMIPRVSE.EXE-E8B8DD29.pf
+파일 추출 완료: WUAUCLT.EXE-5D573F0E.pf
+파일 추출 완료: WWAHOST.EXE-9174341B.pf
+파일 추출 완료: DRVINST.EXE-39D9EAC7.pf
+파일 추출 완료: DSMUSERTASK.EXE-853A6893.pf
+파일 추출 완료: ERASER 6.2.0.2994.EXE-0872870C.pf
+파일 추출 완료: FILESYNCCONFIG.EXE-69058E29.pf
+파일 추출 완료: FILESYNCCONFIG.EXE-D11AE5E6.pf
+파일 추출 완료: FODHELPER.EXE-7F1ED892.pf
+파일 추출 완료: FSQUIRT.EXE-A8FF1DEB.pf
+파일 추출 완료: IDENTITY_HELPER.EXE-B24E81E7.pf
+파일 추출 완료: LOGONUI.EXE-F639BD7E.pf
+파일 추출 완료: LPREMOVE.EXE-570BDFF7.pf
+파일 추출 완료: MICROSOFT.PHOTOS.EXE-05E31754.pf
+파일 추출 완료: MICROSOFTEDGEUPDATE.EXE-7A595326.pf
+파일 추출 완료: MICROSOFTEDGEUPDATE.EXE-ED82F101.pf
+파일 추출 완료: MICROSOFTEDGEUPDATESETUP_X86_-29BFE7FB.pf
+파일 추출 완료: MICROSOFTEDGE_X64_129.0.2792.-44F52B78.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-42D4E2C5.pf
+파일 추출 완료: SPPEXTCOMOBJ.EXE-7D45A1AB.pf
+파일 추출 완료: SVCHOST.EXE-5D15888E.pf
+파일 추출 완료: SVCHOST.EXE-DB425447.pf
+파일 추출 완료: TIWORKER.EXE-541F28C3.pf
+파일 추출 완료: SVCHOST.EXE-6A249820.pf
+파일 추출 완료: SVCHOST.EXE-6E1A6101.pf
+파일 추출 완료: SVCHOST.EXE-6E285CB9.pf
+파일 추출 완료: SVCHOST.EXE-74450C2F.pf
+파일 추출 완료: SVCHOST.EXE-7C364D53.pf
+파일 추출 완료: SVCHOST.EXE-8C0617FB.pf
+파일 추출 완료: SVCHOST.EXE-8C737072.pf
+파일 추출 완료: SVCHOST.EXE-9E5372D6.pf
+파일 추출 완료: SVCHOST.EXE-9F82877C.pf
+파일 추출 완료: SVCHOST.EXE-A87523EE.pf
+파일 추출 완료: SVCHOST.EXE-B1C43117.pf
+파일 추출 완료: SVCHOST.EXE-BF3D5CA5.pf
+파일 추출 완료: SVCHOST.EXE-D0F686CF.pf
+파일 추출 완료: SVCHOST.EXE-D1834105.pf
+파일 추출 완료: SVCHOST.EXE-D23C24EB.pf
+파일 추출 완료: SVCHOST.EXE-DAF72364.pf
+파일 추출 완료: SVCHOST.EXE-DB06B1F5.pf
+파일 추출 완료: MOUSOCOREWORKER.EXE-4429AC2B.pf
+파일 추출 완료: MPCMDRUN.EXE-2C9109F9.pf
+파일 추출 완료: MSCORSVW.EXE-16B291C4.pf
+파일 추출 완료: MSCORSVW.EXE-8CE1A322.pf
+파일 추출 완료: MSEDGE.EXE-37D25F9A.pf
+파일 추출 완료: MSEDGE.EXE-37D25F9B.pf
+파일 추출 완료: MSEDGE.EXE-37D25F9C.pf
+파일 추출 완료: MSEDGE.EXE-37D25F9E.pf
+파일 추출 완료: MSEDGE.EXE-37D25FA2.pf
+파일 추출 완료: SECURITYHEALTHHOST.EXE-06344EE9.pf
+파일 추출 완료: SETTINGSYNCHOST.EXE-0130E42A.pf
+파일 추출 완료: SETUP.EXE-1047CF41.pf
+파일 추출 완료: SETUP.EXE-1047CF45.pf
+파일 추출 완료: SETUP.EXE-4A331366.pf
+파일 추출 완료: SETUP.EXE-4A33136A.pf
+파일 추출 완료: SGRMBROKER.EXE-32481FEB.pf
+파일 추출 완료: SHELLEXPERIENCEHOST.EXE-655318BF.pf
+파일 추출 완료: SIHCLIENT.EXE-98C47F6C.pf
+파일 추출 완료: SLUI.EXE-3E441AEE.pf
+파일 추출 완료: SMARTSCREEN.EXE-EACC1250.pf
+파일 추출 완료: SMSS.EXE-B5B810DB.pf
+파일 추출 완료: SVCHOST.EXE-04F53BBC.pf
+파일 추출 완료: SVCHOST.EXE-0EC77F95.pf
+파일 추출 완료: SVCHOST.EXE-12871F9D.pf
+파일 추출 완료: SVCHOST.EXE-15A68A42.pf
+파일 추출 완료: SVCHOST.EXE-1C33C471.pf
+파일 추출 완료: SVCHOST.EXE-38C6A0A6.pf
+파일 추출 완료: SVCHOST.EXE-47D06EA1.pf
+파일 추출 완료: SVCHOST.EXE-47E93A69.pf
+파일 추출 완료: SVCHOST.EXE-47F05ECE.pf
+파일 추출 완료: SVCHOST.EXE-4AFEF8D1.pf
+파일 추출 완료: SVCHOST.EXE-4E8E9E20.pf
+파일 추출 완료: SVCHOST.EXE-F0617438.pf
+파일 추출 완료: SVCHOST.EXE-F630A562.pf
+파일 추출 완료: SVCHOST.EXE-F8604993.pf
+파일 추출 완료: SVCHOST.EXE-FDC3FC8E.pf
+파일 추출 완료: SVCHOST.EXE-FF256082.pf
+파일 추출 완료: TASKHOSTW.EXE-2E5D4B75.pf
+파일 추출 완료: TEXTINPUTHOST.EXE-054E44A9.pf
+파일 추출 완료: DLLHOST.EXE-15CDDA9C.pf
+파일 추출 완료: DLLHOST.EXE-3D723117.pf
+파일 추출 완료: DLLHOST.EXE-4427C062.pf
+파일 추출 완료: DLLHOST.EXE-4B6CB38A.pf
+파일 추출 완료: DLLHOST.EXE-4F1B3E7E.pf
+파일 추출 완료: DLLHOST.EXE-6389524F.pf
+파일 추출 완료: DLLHOST.EXE-960426D8.pf
+Job is working Please wait...
+File downloaded successfully as 'lnk.xlsx'.
+의심스러운 항목이 ..\..\output\suspicious_artifact\\LNK\suspicious_antiforensic_lnk_files_Administrator.csv에 저장되었습니다.
+의심스러운 항목이 ..\..\output\suspicious_artifact\\LNK\suspicious_antiforensic_lnk_files_Guest.csv에 저장되었습니다.
+의심스러운 항목이 ..\..\output\suspicious_artifact\\LNK\suspicious_antiforensic_lnk_files_Default User.csv에 저장되었습니다.
+의심스러운 항목 감지: ..\..\output\artifact\LNK\ccno_lnk\anti.lnk, Target: C:\Users\ccno\Desktop\anti
+의심스러운 항목 감지: ..\..\output\artifact\LNK\ccno_lnk\forensic.lnk, Target: C:\Users\ccno\Desktop\anti\forensic.txt
+의심스러운 항목이 ..\..\output\suspicious_artifact\\LNK\suspicious_antiforensic_lnk_files_ccno.csv에 저장되었습니다.
+파일 추출 완료: DLLHOST.EXE-ACFEFA21.pf
+파일 추출 완료: DLLHOST.EXE-C60C3853.pf
+파일 추출 완료: DLLHOST.EXE-E9BDD97B.pf
+파일 추출 완료: MSIEXEC.EXE-8FFB1633.pf
+파일 추출 완료: MSIEXEC.EXE-CDBFC0F7.pf
+파일 추출 완료: NGEN.EXE-4A8DA13E.pf
+파일 추출 완료: NGEN.EXE-734C6620.pf
+파일 추출 완료: NGENTASK.EXE-0E6CEC17.pf
+파일 추출 완료: NGENTASK.EXE-849BFD75.pf
+파일 추출 완료: NISSRV.EXE-09946424.pf
+파일 추출 완료: ONEDRIVE.EXE-B7BCF771.pf
+파일 추출 완료: ONEDRIVESETUP.EXE-22F8D859.pf
+파일 추출 완료: ONEDRIVESETUP.EXE-808CE70A.pf
+파일 추출 완료: Op-SEARCHAPP.EXE-DD93808B-00000001.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-4551A062.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-5A3B22F7.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-68C55521.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-6B016F92.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-8EC73A74.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-929314A6.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-D0305CF6.pf
+파일 추출 완료: RUNTIMEBROKER.EXE-D8B344F8.pf
+파일 추출 완료: SEARCHAPP.EXE-D91D826A.pf
+파일 추출 완료: SEARCHFILTERHOST.EXE-44162447.pf
+파일 추출 완료: SEARCHPROTOCOLHOST.EXE-69C456C3.pf
+파일 추출 완료: SVCHOST.EXE-C9E3B372.pf
+파일 추출 완료: BACKGROUNDTASKHOST.EXE-073D0F2B.pf
+파일 추출 완료: SVCHOST.EXE-9BA3717F.pf
+파일 추출 완료: NOTEPAD.EXE-C5670914.pf
+총 141개의 .pf 파일이 추출되었습니다.
+XML 시작 태그 작성 완료
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+AUDIODG.EXE-AB22E9A6.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTASKHOST.EXE-073D0F2B.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTASKHOST.EXE-3021E375.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTASKHOST.EXE-489B7DDD.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTASKHOST.EXE-6EA81700.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTASKHOST.EXE-772AFF02.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTASKHOST.EXE-E20C03EA.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTASKHOST.EXE-F8B2DD01.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+BACKGROUNDTRANSFERHOST.EXE-052CB2AA.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+CLOUDEXPERIENCEHOSTBROKER.EXE-AB26EBC7.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+CONHOST.EXE-0C6456FB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+CONSENT.EXE-40419367.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+CSRSS.EXE-F3C368CB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-15CDDA9C.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-3D723117.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-4427C062.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-4B6CB38A.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-4F1B3E7E.pf 처리 완료 및 XML에 기록.
+Job is working Please wait...
+File downloaded successfully as 'suspicious_antiforensic_lnk_files.xlsx'.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-6389524F.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-960426D8.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-ACFEFA21.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-C60C3853.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DLLHOST.EXE-E9BDD97B.pf 처리 완료 및 XML에 기록.
+===== LNK 아티팩트 처리 (의심스러운 아티팩트 포함) 종료 =====
+
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DRVINST.EXE-39D9EAC7.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+DSMUSERTASK.EXE-853A6893.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+ERASER 6.2.0.2994.EXE-0872870C.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+FILESYNCCONFIG.EXE-69058E29.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+FILESYNCCONFIG.EXE-D11AE5E6.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+FODHELPER.EXE-7F1ED892.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+FSQUIRT.EXE-A8FF1DEB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+IDENTITY_HELPER.EXE-B24E81E7.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+LOGONUI.EXE-F639BD7E.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+LPREMOVE.EXE-570BDFF7.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MICROSOFT.PHOTOS.EXE-05E31754.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MICROSOFTEDGEUPDATE.EXE-7A595326.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MICROSOFTEDGEUPDATE.EXE-ED82F101.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MICROSOFTEDGEUPDATESETUP_X86_-29BFE7FB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MICROSOFTEDGE_X64_129.0.2792.-44F52B78.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MOUSOCOREWORKER.EXE-4429AC2B.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MPCMDRUN.EXE-2C9109F9.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSCORSVW.EXE-16B291C4.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSCORSVW.EXE-8CE1A322.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSEDGE.EXE-37D25F9A.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSEDGE.EXE-37D25F9B.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSEDGE.EXE-37D25F9C.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSEDGE.EXE-37D25F9E.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSEDGE.EXE-37D25FA2.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSIEXEC.EXE-8FFB1633.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+MSIEXEC.EXE-CDBFC0F7.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+NGEN.EXE-4A8DA13E.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+NGEN.EXE-734C6620.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+NGENTASK.EXE-0E6CEC17.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+NGENTASK.EXE-849BFD75.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+NISSRV.EXE-09946424.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+NOTEPAD.EXE-C5670914.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+ONEDRIVE.EXE-B7BCF771.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+ONEDRIVESETUP.EXE-22F8D859.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+ONEDRIVESETUP.EXE-808CE70A.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+Op-SEARCHAPP.EXE-DD93808B-00000001.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNDLL32.EXE-5F579E97.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNDLL32.EXE-FDCBB5A1.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-38943DD5.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-42D4E2C5.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-4551A062.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-5A3B22F7.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+파티션 오프셋 찾음: 0000239616
+$MFT의 inode 번호: 0-128-6
+파일 추출 완료: ..\..\output\artifact\MFTJ\extracted_mft.bin
+$Extend의 inode 번호: 11-144-4
+$UsnJrnl의 inode 번호: 87608-128-3
+파일 추출 완료: ..\..\output\artifact\MFTJ\extracted_usnjrnl.bin
+MFT 분석 완료. 출력 파일: ..\..\output\artifact\MFTJ\mft_output.csv
+USN Journal 분석 완료. 출력 파일: ..\..\output\artifact\MFTJ\usn_output.csv
+엑셀 파일 저장 완료: ..\..\output\artifact\MFTJ\disk_analysis_results.xlsx
+RUNTIMEBROKER.EXE-68C55521.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-6B016F92.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-8EC73A74.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-929314A6.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-D0305CF6.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+RUNTIMEBROKER.EXE-D8B344F8.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SEARCHAPP.EXE-D91D826A.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SEARCHFILTERHOST.EXE-44162447.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SEARCHPROTOCOLHOST.EXE-69C456C3.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SECURITYHEALTHHOST.EXE-06344EE9.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SETTINGSYNCHOST.EXE-0130E42A.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SETUP.EXE-1047CF41.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SETUP.EXE-1047CF45.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SETUP.EXE-4A331366.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SETUP.EXE-4A33136A.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SGRMBROKER.EXE-32481FEB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SHELLEXPERIENCEHOST.EXE-655318BF.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SIHCLIENT.EXE-98C47F6C.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SLUI.EXE-3E441AEE.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SMARTSCREEN.EXE-EACC1250.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SMSS.EXE-B5B810DB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SPPEXTCOMOBJ.EXE-7D45A1AB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SPPSVC.EXE-96070FE0.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+STARTMENUEXPERIENCEHOST.EXE-DC9B8E9D.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-04F53BBC.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-0EC77F95.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-12871F9D.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-15A68A42.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-1C33C471.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-38C6A0A6.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-47D06EA1.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-47E93A69.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-47F05ECE.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-4AFEF8D1.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-4E8E9E20.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-5D15888E.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-6A249820.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-6E1A6101.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-6E285CB9.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-74450C2F.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-7C364D53.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-8C0617FB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-8C737072.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-9BA3717F.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-9E5372D6.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-9F82877C.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-A87523EE.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-B1C43117.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-BF3D5CA5.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-C9E3B372.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-D0F686CF.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-D1834105.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-D23C24EB.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-DAF72364.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-DB06B1F5.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-DB425447.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-F0617438.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-F630A562.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-F8604993.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-FDC3FC8E.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+SVCHOST.EXE-FF256082.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+TASKHOSTW.EXE-2E5D4B75.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+TEXTINPUTHOST.EXE-054E44A9.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+TIWORKER.EXE-541F28C3.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+TRUSTEDINSTALLER.EXE-766EFF52.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+UNREGMP2.EXE-51519EBD.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+USEROOBEBROKER.EXE-65584ADF.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+VERCLSID.EXE-AB0FD091.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+VSSVC.EXE-6C8F0C66.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+WERMGR.EXE-F439C551.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+WINLOGON.EXE-DEDDC9B6.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+WLRMDR.EXE-A7C36FDD.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+WMIADAP.EXE-BB21CD77.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+WMIPRVSE.EXE-E8B8DD29.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+WUAUCLT.EXE-5D573F0E.pf 처리 완료 및 XML에 기록.
+STDOUT: Lucky man, you have your prefetch file ready to be parsed!
+
+WWAHOST.EXE-9174341B.pf 처리 완료 및 XML에 기록.
+XML 종료 태그 작성 완료
+CSV 파일이 성공적으로 생성되었습니다: ..\..\output\artifact\prefetch\prefetch.csv
+의심스러운 키워드와 일치하지 않음: AUDIODG.EXE
+의심스러운 키워드와 일치하지 않음: BACKGROUNDTASKHOST.EXE
+의심스러운 키워드와 일치하지 않음: BACKGROUNDTRANSFERHOST.EXE
+의심스러운 키워드와 일치하지 않음: CLOUDEXPERIENCEHOSTBROKER.EXE
+의심스러운 키워드와 일치하지 않음: CONHOST.EXE
+의심스러운 키워드와 일치하지 않음: CONSENT.EXE
+의심스러운 키워드와 일치하지 않음: CSRSS.EXE
+의심스러운 키워드와 일치하지 않음: DLLHOST.EXE
+의심스러운 키워드와 일치하지 않음: DRVINST.EXE
+의심스러운 키워드와 일치하지 않음: DSMUSERTASK.EXE
+ERASER 6.2.0.2994.EXE가 10분 내에 62번 실행되었습니다.
+추출하려는 Prefetch 파일: ..\..\output\artifact\prefetch\ERASER 6.2.0.2994.EXE-0872870C.pf
+의심스러운 파일 ERASER 6.2.0.2994.EXE-0872870C.pf 추출 완료: ..\..\output\suspicious_file\prefetch\ERASER 6.2.0.2994.EXE-0872870C.pf
+의심스러운 키워드와 일치하지 않음: FILESYNCCONFIG.EXE
+의심스러운 키워드와 일치하지 않음: FODHELPER.EXE
+의심스러운 키워드와 일치하지 않음: FSQUIRT.EXE
+의심스러운 키워드와 일치하지 않음: IDENTITY_HELPER.EXE
+의심스러운 키워드와 일치하지 않음: LOGONUI.EXE
+LPREMOVE.EXE가 10분 내에 15번 실행되었습니다.
+추출하려는 Prefetch 파일: ..\..\output\artifact\prefetch\LPREMOVE.EXE-570BDFF7.pf
+의심스러운 파일 LPREMOVE.EXE-570BDFF7.pf 추출 완료: ..\..\output\suspicious_file\prefetch\LPREMOVE.EXE-570BDFF7.pf
+의심스러운 키워드와 일치하지 않음: MICROSOFT.PHOTOS.EXE
+의심스러운 키워드와 일치하지 않음: MICROSOFTEDGEUPDATE.EXE
+의심스러운 키워드와 일치하지 않음: MICROSOFTEDGEUPDATESETUP_X86_
+의심스러운 키워드와 일치하지 않음: MICROSOFTEDGE_X64_129.0.2792.
+의심스러운 키워드와 일치하지 않음: MOUSOCOREWORKER.EXE
+의심스러운 키워드와 일치하지 않음: MPCMDRUN.EXE
+의심스러운 키워드와 일치하지 않음: MSCORSVW.EXE
+의심스러운 키워드와 일치하지 않음: MSEDGE.EXE
+의심스러운 키워드와 일치하지 않음: MSIEXEC.EXE
+의심스러운 키워드와 일치하지 않음: NGEN.EXE
+의심스러운 키워드와 일치하지 않음: NGENTASK.EXE
+의심스러운 키워드와 일치하지 않음: NISSRV.EXE
+의심스러운 키워드와 일치하지 않음: NOTEPAD.EXE
+의심스러운 키워드와 일치하지 않음: ONEDRIVE.EXE
+의심스러운 키워드와 일치하지 않음: ONEDRIVESETUP.EXE
+의심스러운 키워드와 일치하지 않음: Op-SEARCHAPP.EXE-DD93808B
+의심스러운 키워드와 일치하지 않음: RUNDLL32.EXE
+의심스러운 키워드와 일치하지 않음: RUNTIMEBROKER.EXE
+의심스러운 키워드와 일치하지 않음: SEARCHAPP.EXE
+의심스러운 키워드와 일치하지 않음: SEARCHFILTERHOST.EXE
+의심스러운 키워드와 일치하지 않음: SEARCHPROTOCOLHOST.EXE
+의심스러운 키워드와 일치하지 않음: SECURITYHEALTHHOST.EXE
+의심스러운 키워드와 일치하지 않음: SETTINGSYNCHOST.EXE
+의심스러운 키워드와 일치하지 않음: SETUP.EXE
+의심스러운 키워드와 일치하지 않음: SGRMBROKER.EXE
+의심스러운 키워드와 일치하지 않음: SHELLEXPERIENCEHOST.EXE
+의심스러운 키워드와 일치하지 않음: SIHCLIENT.EXE
+의심스러운 키워드와 일치하지 않음: SLUI.EXE
+의심스러운 키워드와 일치하지 않음: SMARTSCREEN.EXE
+의심스러운 키워드와 일치하지 않음: SMSS.EXE
+의심스러운 키워드와 일치하지 않음: SPPEXTCOMOBJ.EXE
+의심스러운 키워드와 일치하지 않음: SPPSVC.EXE
+의심스러운 키워드와 일치하지 않음: STARTMENUEXPERIENCEHOST.EXE
+의심스러운 키워드와 일치하지 않음: SVCHOST.EXE
+의심스러운 키워드와 일치하지 않음: TASKHOSTW.EXE
+의심스러운 키워드와 일치하지 않음: TEXTINPUTHOST.EXE
+의심스러운 키워드와 일치하지 않음: TIWORKER.EXE
+의심스러운 키워드와 일치하지 않음: TRUSTEDINSTALLER.EXE
+의심스러운 키워드와 일치하지 않음: UNREGMP2.EXE
+의심스러운 키워드와 일치하지 않음: USEROOBEBROKER.EXE
+의심스러운 키워드와 일치하지 않음: VERCLSID.EXE
+의심스러운 키워드와 일치하지 않음: VSSVC.EXE
+의심스러운 키워드와 일치하지 않음: WERMGR.EXE
+의심스러운 키워드와 일치하지 않음: WINLOGON.EXE
+의심스러운 키워드와 일치하지 않음: WLRMDR.EXE
+의심스러운 키워드와 일치하지 않음: WMIADAP.EXE
+의심스러운 키워드와 일치하지 않음: WMIPRVSE.EXE
+의심스러운 키워드와 일치하지 않음: WUAUCLT.EXE
+의심스러운 키워드와 일치하지 않음: WWAHOST.EXE
+===== 프리패치 아티팩트 처리 (의심스러운 아티팩트 포함) 종료 =====
+
+'..\..\output\artifact\MFTJ\mft_output.csv' 파일을 성공적으로 읽었습니다. 총 행 수: 161418
+'..\..\output\artifact\MFTJ\mft_output.csv' 파일의 필터링 전 샘플 데이터:
+   Filename
+0       NaN
+1  $MFTMirr
+2  $LogFile
+3   $Volume
+4  $AttrDef
+필터링된 행 수: 106
+'..\..\output\artifact\MFTJ\mft_output.csv' 파일에 필터링된 데이터가 106건 있습니다.
+NaN 값 제거 전: 106건, 제거 후: 106건
+'..\..\output\artifact\MFTJ\mft_output.csv' 파일의 ['Filename']에서 NaN을 제거한 후, 106건의 데이터가 남았습니다.
+'..\..\output\suspicious_artifact\MFTJ\mft_filtered.csv' 파일에 저장될 필터링된 데이터 샘플:
+              SI Creation Time  ...                                           Filename
+21    2024-09-21T14:12:13.377Z  ...                                           $Deleted
+169   2019-12-07T09:14:52.174Z  ...                                            Deleted
+3628  2019-12-07T09:13:06.669Z  ...            c_fsundelete.inf_amd64_741f159cc6ce7814
+5591  2019-12-07T14:55:58.819Z  ...  amd64_c_fsundelete.inf.resources_31bf3856ad364...
+5781  2019-12-07T09:07:54.188Z  ...  amd64_dual_c_fsundelete.inf_31bf3856ad364e35_1...
+
+[5 rows x 9 columns]
+'..\..\output\artifact\MFTJ\mft_output.csv' 에서 필터링된 데이터가 '..\..\output\suspicious_artifact\MFTJ\mft_filtered.csv' 로 저장되었습니다.
+'..\..\output\artifact\MFTJ\usn_output.csv' 파일을 성공적으로 읽었습니다. 총 행 수: 149936
+'..\..\output\artifact\MFTJ\usn_output.csv' 파일의 필터링 전 샘플 데이터:
+                                            filename
+0  Microsoft-Windows-CoreSystem-Package~31bf3856a...
+1  Microsoft-Windows-CoreSystem-Package~31bf3856a...
+2  Microsoft-Windows-CoreSystem-Package~31bf3856a...
+3  Microsoft-Windows-CoreSystem-Package~31bf3856a...
+4  Microsoft-Windows-CoreSystem-Package~31bf3856a...
+필터링된 행 수: 213
+'..\..\output\artifact\MFTJ\usn_output.csv' 파일에 필터링된 데이터가 213건 있습니다.
+NaN 값 제거 전: 213건, 제거 후: 213건
+'..\..\output\artifact\MFTJ\usn_output.csv' 파일의 ['filename']에서 NaN을 제거한 후, 213건의 데이터가 남았습니다.
+'..\..\output\suspicious_artifact\MFTJ\usn_filtered.csv' 파일에 저장될 필터링된 데이터 샘플:
+                               timestamp                                           filename
+72037   2024-09-23 12:46:46.445747+00:00  amd64_microsoft-windows-d..mxaddremoveprograms...
+81651   2024-09-23 12:46:48.695360+00:00  amd64_microsoft-windows-s..ttings-removedevice...
+126107  2024-09-23 14:47:50.195827+00:00                             DeletedAllUserPackages
+126108  2024-09-23 14:47:50.195827+00:00                             DeletedAllUserPackages
+142723  2024-09-23 14:55:20.339968+00:00                              Eraser 6.2.0.2994.exe
+'..\..\output\artifact\MFTJ\usn_output.csv' 에서 필터링된 데이터가 '..\..\output\suspicious_artifact\MFTJ\usn_filtered.csv' 로 저장되었습니다.
+'..\..\output\suspicious_artifact\MFTJ\mft_filtered.xml' 파일이 성공적으로 생성되었습니다.
+'..\..\output\suspicious_artifact\MFTJ\usn_filtered.xml' 파일이 성공적으로 생성되었습니다.
+===== MFTJ 아티팩트 처리 (의심스러운 아티팩트 포함) 종료 =====
+
+===== CSV 파일 결합 시작 =====
+===== CSV 파일 결합 종료 =====
+
