@@ -1,4 +1,4 @@
-메인 루틴 그리고 사브루틴에서는 LNK, web, event_log에는 구글 API (Google sheet, Google Drive) credential 파일이 필요합니다
+메인 루틴 그리고 사브루틴에서는 LNK, web, event_log, defender_log(의심 추출은 구현 안되어 있음)에는 구글 API (Google sheet, Google Drive) credential 파일이 필요합니다
 
 <file_name>.json 형식의 파일을 생성한 후 이름을 반드시 'pycsvauto-df1c6762bab2'로 저장해주세요 (안 그러면 프로그램이 인식을 못합니다)
 
