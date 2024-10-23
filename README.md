@@ -11,3 +11,7 @@ Prefetch, LNK(JumpList), web log, evt_log, MFT & Usnjrnl을 디스크 이미지 
 ※ sleuthkit, analyzeMFT, USN-Journal-Parser, python-evtx를 목적에 맞게 포팅하여 사용하였습니다 ※
 
 setup.py를 이용하면 exe로 즐길 수 있습니다 --> python setup.py build를 cmd에 입력
+
+현재 defender_log는 저희 목적에는 맞지 않아 도중 개발을 중단하여 메인 루틴과의 연계 및 소스코드 구현이 안되어 있습니다
+
+이점 참고바랍니다
