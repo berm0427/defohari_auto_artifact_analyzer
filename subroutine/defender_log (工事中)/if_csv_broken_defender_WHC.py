@@ -48,7 +48,7 @@ def download_google_sheet_as_excel(sheet_id, json_credentials_path):
         print(f"Failed to download the file. Status code: {response.status_code}")
 
 # Path to your CSV file
-csv_file_path = 'Microsoft-Windows-Windows Defender%4WHC.csv'
+csv_file_path = r'..\..\output\artifact\defender_log\Microsoft-Windows-Windows Defender%4WHC.csv'
 
 # Path to your service account JSON credentials file
 json_credentials_path = 'pycsvauto-df1c6762bab2.json'

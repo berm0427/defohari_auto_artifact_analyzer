@@ -18,7 +18,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     evtx_file_path = sys.argv[1]
-    txt_file_path = os.path.splitext(evtx_file_path)[0] + ".xml"  # 같은 이름의 .txt 파일 생성
+    xml_file_path = os.path.splitext(evtx_file_path)[0] + ".xml"  # 같은 이름의 .txt 파일 생성
 
-    evtx_to_xml(evtx_file_path, txt_file_path)
-    print(f"EVTX 파일이 {txt_file_path}로 변환되었습니다.")
+    evtx_to_xml(evtx_file_path, xml_file_path)
+    print(f"EVTX 파일이 {xml_file_path}로 변환되었습니다.")
