@@ -3,11 +3,6 @@
 
 다른 이름을 하고 싶다면 if_csv_broken_<name>.py 이런 형식의 파일에서 직접 파일 경로를 수정해주셔야 하며, 이로 인해 발생하는 모든 오류는 본인 책임입니다
 
-main routine, LNK, Web, event_log require Google API (Google Sheet, Google Drive) credential
-You must create a file in the <file_name>.json format and save the name as 'pycsvauto-df1c6762bab2' (otherwise the program will not recognize it)
-
-To specify another name, you must modify the file path directly from the file in the following format (if_csv_broken_<name>.py), and you are responsible for any errors
-
 P.S) 토렌트 분석 플러그인은 ws1004님의 아이디어를 참고하여 제작하였습니다 
-
+좋은 아이디어 감사드립니다
 https://ws1004-4n6.notion.site/uTorrent-Artifact-Forensic-Analysis-e864575658c14bbda82a5a71c28104b9
