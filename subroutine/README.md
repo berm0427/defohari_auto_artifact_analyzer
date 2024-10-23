@@ -7,3 +7,7 @@ main routine, LNK, Web, event_log require Google API (Google Sheet, Google Drive
 You must create a file in the <file_name>.json format and save the name as 'pycsvauto-df1c6762bab2' (otherwise the program will not recognize it)
 
 To specify another name, you must modify the file path directly from the file in the following format (if_csv_broken_<name>.py), and you are responsible for any errors
+
+P.S) 토렌트 분석 플러그인은 ws1004님의 아이디어를 참고하여 제작하였습니다 
+
+https://ws1004-4n6.notion.site/uTorrent-Artifact-Forensic-Analysis-e864575658c14bbda82a5a71c28104b9
