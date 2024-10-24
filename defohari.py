@@ -49,7 +49,6 @@ def run_hive_if_selected():
 def run_hive(image_path):
     """파싱한 하이브 파일을 저장"""
     hives_dir = os.path.join(os.getcwd(), r'subroutine\web\extracted_hives')
-    #script_path = r'subroutine\web\web_hive_parsing_Log_num.py'
     if not os.path.exists(hives_dir):
         try:
             os.makedirs(hives_dir)
@@ -274,16 +273,12 @@ class ArtifactExtractorApp:
         self.total_tasks = 0
         self.progress_queue = queue.Queue()
         self.message_queue = queue.Queue()
-        self.log_file_path = "process_logs.txt"
         self.elapsed_times = []
         self.completed_tasks = 0
         self.lock = threading.Lock()
         self.file_lock = threading.Lock()
         self.current_task_index = 0
         self.stop_event = threading.Event()
-
-        if os.path.exists(self.log_file_path):
-            os.remove(self.log_file_path)
 
         self.original_stdout = sys.stdout  # 원래 stdout 저장
         self.pl = PrintLogger(self.output_text, self.message_queue)
@@ -353,16 +348,12 @@ class ArtifactExtractorApp:
         self.root.after(100, self.process_queues)
 
     def start_extraction(self):
-    # 하이브 분석을 위한 디스크 이미지 파일 경로 설정
+        # 하이브 분석을 위한 디스크 이미지 파일 경로 설정
         image_path_directory = r"image_here"
         image_path = get_first_disk_image_path(image_path_directory)
         if not image_path:
             messagebox.showerror("오류", "이미지 파일을 찾을 수 없습니다.")
             return
-        
-        # 기존 로그 파일 삭제
-        if os.path.exists(self.log_file_path):
-            os.remove(self.log_file_path)
         
         # 출력 창 초기화
         self.output_text.config(state=tk.NORMAL)
@@ -375,7 +366,7 @@ class ArtifactExtractorApp:
         hive_not_required = False
         
         for (var, identifier), (susp_var, susp_identifier) in zip(self.artifact_vars, self.suspicious_vars):
-            if var.get():
+            if var.get() or susp_var.get():
                 artifact_info = next((item for item in self.artifacts_info if item[2] == identifier), None)
                 
                 if (identifier in ['web', 'lnk']) and not hive_not_required:
@@ -383,7 +374,7 @@ class ArtifactExtractorApp:
                         self.message_queue.put(('current_task', "하이브 추출 중..."))
                         start_time = time.time()
                         
-                        run_hive(image_path) # 하이브 추출 실행  
+                        run_hive(image_path)  # 하이브 추출 실행  
                         elapsed_time = time.time() - start_time
                         
                         self.message_queue.put(("log", f"하이브 추출 완료. 경과 시간: {elapsed_time:.2f}초\n"))
@@ -391,20 +382,29 @@ class ArtifactExtractorApp:
                     
                     except Exception as e:
                         messagebox.showerror("오류", f"하이브 추출 중 오류 발생: {e}")
-                        return # 오류가 발생하면 중단
+                        return  # 오류가 발생하면 중단
                 
                 if artifact_info:
                     args = []
                     task_name = artifact_info[0]
-                    # 아티팩트 이름을 포함하여 task_name_for_info 설정
                     task_name_for_info = f"아티팩트 추출 중..."
+
+                    if var.get():
+                        selected_artifacts[identifier] = True  # 일반 아티팩트 추가
+
                     if susp_var.get():
                         args.append('--suspicious')
                         task_name += " (의심스러운 아티팩트 포함)"
-                        task_name_for_info = "아티팩트 (의심스러운 아티팩트 포함) 추출 중..."
-                        selected_artifacts[susp_identifier] = True
-                    self.subroutines.append((task_name, task_name_for_info, artifact_info[1], args))  # 수정된 부분
-                    selected_artifacts[identifier] = True
+                        task_name_for_info = f"아티팩트 (의심스러운 아티팩트 포함) 추출 중..."
+                        selected_artifacts[susp_identifier] = True  # 의심스러운 아티팩트 추가
+
+                    # 각 아티팩트별로 로그 파일 경로를 지정
+                    log_file_path = f"process_logs_{identifier}.txt"
+                    # 기존 로그 파일 삭제
+                    if os.path.exists(log_file_path):
+                        os.remove(log_file_path)
+
+                    self.subroutines.append((task_name, task_name_for_info, artifact_info[1], args, log_file_path))
 
         if not self.subroutines:
             messagebox.showwarning("경고", "최소한 하나의 아티팩트를 선택해야 합니다.")
@@ -421,7 +421,6 @@ class ArtifactExtractorApp:
         self.start_button.config(state=tk.DISABLED)
         self.stop_button.config(state=tk.NORMAL)
         self.exit_button.config(state=tk.DISABLED)
-
         
         # 경과 시간 측정을 위한 시작 시간 설정
         self.start_time = time.time() 
@@ -429,13 +428,13 @@ class ArtifactExtractorApp:
 
         # 작업들을 병렬로 실행 (스레드로 실행)
         self.threads = []
-        for index, (task_name, task_name_for_info, command, args) in enumerate(self.subroutines):
+        for index, (task_name, task_name_for_info, command, args, log_file_path) in enumerate(self.subroutines):
             t = threading.Thread(target=run_subroutine, args=(
                 task_name,
-                task_name_for_info,  # 수정된 부분
+                task_name_for_info,
                 command,
                 args,
-                self.log_file_path,
+                log_file_path,
                 self.progress_queue,
                 self.message_queue,
                 index,
@@ -449,7 +448,7 @@ class ArtifactExtractorApp:
         if self.csv_var.get():
             if selected_artifacts:
                 args = [json.dumps(selected_artifacts)]
-                self.csv_subroutine = ('CSV 파일 결합', 'CSV 파일 결합', ['python', 'csv_totaler.py'], args)  # 수정된 부분
+                self.csv_subroutine = ('CSV 파일 결합', 'CSV 파일 결합 중...', ['python', 'csv_totaler.py'], args, 'process_logs_csv_totaler.txt')
                 threading.Thread(target=self.wait_for_completion_and_run_csv).start()
             else:
                 messagebox.showwarning("경고", "CSV 파일 결합을 선택하려면 최소한 하나의 아티팩트를 선택해야 합니다.")
@@ -468,7 +467,7 @@ class ArtifactExtractorApp:
             self.message_queue.put(('current_task', "완료! 결과 파일을 확인하세요."))
             self.message_queue.put("모든 작업이 완료되었습니다.\n")
         self.message_queue.put(f"총 소요 시간: {int(total_time)}초\n")
-        self.message_queue.put(f"모든 로그는 '{self.log_file_path}' 파일에 기록되었습니다.\n")
+        self.message_queue.put("모든 로그는 각 아티팩트별 로그 파일에 기록되었습니다.\n")
         # 버튼 상태 변경도 메인 스레드에서 수행
         self.message_queue.put(('update_buttons', None))
         # sys.stdout 원래대로 복구
@@ -483,13 +482,13 @@ class ArtifactExtractorApp:
         self.elapsed_times.append(0)
         if not self.stop_event.is_set():
             self.message_queue.put(('current_task', "CSV 파일 결합 중..."))
-            csv_task_name, csv_task_for_info, csv_command, csv_args = self.csv_subroutine  # 수정된 부분
+            csv_task_name, csv_task_for_info, csv_command, csv_args, csv_log_file = self.csv_subroutine
             elapsed_time = run_subroutine(
                 csv_task_name,
-                csv_task_for_info,  # 수정된 부분
+                csv_task_for_info,
                 csv_command,
                 csv_args,
-                self.log_file_path,
+                csv_log_file,
                 self.progress_queue,
                 self.message_queue,
                 index,
@@ -507,7 +506,7 @@ class ArtifactExtractorApp:
             self.message_queue.put(('current_task', "완료! 결과 파일을 확인하세요."))
             self.message_queue.put("모든 작업이 완료되었습니다.\n")
         self.message_queue.put(f"총 소요 시간: {int(total_time)}초\n")
-        self.message_queue.put(f"모든 로그는 '{self.log_file_path}' 파일에 기록되었습니다.\n")
+        self.message_queue.put("모든 로그는 각 아티팩트별 로그 파일에 기록되었습니다.\n")
         # 버튼 상태 변경도 메인 스레드에서 수행
         self.message_queue.put(('update_buttons', None))
         # sys.stdout 원래대로 복구
