@@ -127,7 +127,7 @@ def main_routine(selected_artifacts):
         save_to_excel(data_frames)
     else:
         # 결합할 데이터가 없는 경우에도 메시지를 출력하지 않습니다.
-        pass
+        print("데이터 없음")
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
@@ -136,4 +136,4 @@ if __name__ == "__main__":
         main_routine(selected_artifacts)
     else:
         # 선택된 아티팩트 정보가 제공되지 않은 경우에도 메시지를 출력하지 않습니다.
-        pass
+        print("아티팩트 없음")
