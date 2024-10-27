@@ -16,4 +16,6 @@ setup.py를 이용하면 exe로 즐길 수 있습니다 --> python setup.py buil
 
 메인 루틴과(defohari.py)의 연계 및 소스코드 구현이 일부 안되어 있습니다
 
+PythonCDR.py는 본 프로젝트와는 연관이 없지만 악성코드 무해화(CDR, Content Disarm&Reconstruction)를 MS word 기반에서 사용되도록 개발한 것입니다
+
 이점 참고바랍니다
