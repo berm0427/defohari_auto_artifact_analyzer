@@ -16,8 +16,6 @@ setup.py를 이용하면 exe로 즐길 수 있습니다 --> python setup.py buil
 
 메인 루틴과(defohari.py)의 연계 및 소스코드 구현이 일부 안되어 있습니다
 
-defohari_test.py는 아이디어를 구현한 코드로 아직 미완성입니다
-
 이점 참고바랍니다
 
 # P.S
