@@ -2,7 +2,9 @@
 
 구글 API (Google sheet, Google Drive) credential 파일이 필요합니다
 
-<file_name>.json 형식의 파일을 생성한 후 이름을 반드시 'pycsvauto-df1c6762bab2.json'로 저장해주세요 (안 그러면 프로그램이 인식을 못합니다)
+<file_name>.json 형식의 파일을 생성한 후 이름을 반드시 'pycsvauto-df1c6762bab2.json'로 만든 후,
+
+각 폴더(LNK, web, event_log, defender_log(차후 대비용, 필요가 없을 시 생략 가능))저장해주세요 (안 그러면 프로그램이 인식을 못합니다)
 
 다른 이름을 하고 싶다면 if_csv_broken_<name>.py 이런 형식의 파일에서 직접 파일 경로를 수정해주셔야 하며, 
 
